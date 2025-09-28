@@ -6,6 +6,8 @@ Za pravilnu funkcionalnost, potrebno je konfigurisati FPGA tako da GPIO kontrole
 
 FPGA konfiguracija omogucena je fajlom `socfpga.rbf` i  `de1soc_handoff.patch`.
 
+`de1soc_handoff.patch` file je kreiran pomocu qts fileova.
+
 # Konfiguracija
 
 U projektnu je koristen **Crosstool-NG** kao toolchain za kros-kompajliranje, kao alat koji automatizuje izgradnju kompletnog linux sistema je koristen **Buildroot 2024.02**. Da bi koristili ovaj buildroot, prvo je potrebno da preuzmemo repozitorijum ovog build sistema i da se prebacimo na odgovarajuću granu:

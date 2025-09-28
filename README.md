@@ -137,7 +137,7 @@ button_1 {
 		};
 
 ```
-Tako sto sam jedan jedan pin povezao na gpio altera pin 0, a drugi kraj dugmeta na GND. Nakon pokretanja evtest-a dugme je uspjesno registrovano kao da radi.
+Tako sto sam jedan pin povezao na gpio altera pin 0, a drugi kraj dugmeta na GND. Nakon pokretanja evtest-a desi se ocekivano ponasanje. Pritisak i pustanje dugmeta se registruje.
 
 # Zakljucak
 Iz par testova koje smo sproveli mozemo utvrditi da potencijalni problem moze nastati usled definisanja i redova i kolona kao active_high stanja, zato sto konstatno dobijamo da je dugme pritisnuto, a kad zapravo pritisnemo dumge, driver procita to stanje kao da su otpustena ostala dugmad. Ovdje problem moze nastati kod samog drivera.
